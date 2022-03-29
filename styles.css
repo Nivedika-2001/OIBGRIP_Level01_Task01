@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://cdn.pixabay.com/photo/2020/09/01/21/03/sunset-5536777__340.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+nav{
+	width: 100%;
+	height: 15vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%;
+	text-align: center;
+	color: white;
+}
+nav .menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+}
+nav .menu a{
+	width:25% ;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+nav .menu a:first-child{
+	color: #FFC300;
+}
+
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+section h3{
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	text-shadow: 6px 6px 12px black;
+}
+
+section h1{
+	margin: 30px 0 20px 0px;
+	font-size: 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 6px black;
+	color:  #FFC300;
+
+}
+section h1 span{
+	text-shadow: 2px 1px 6px #FFC300;
+	color: black;
+	text-transform: uppercase;
+}
+section p{
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0 80px 15px 0;
+	color: black;
+}
+
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	margin-top: 50px;
+}
+
+section .btnone{
+	background-color:  #FFC300;
+	color: white;
+	font-weight: bold;
+}
+section .btntwo{
+	background-color: black;
+	color:  #FFC300;
+	font-weight: bold;
+}
+
+section .btntwo:hover{
+	background-color:  #FFC300;
+	color: white;
+	font-weight: bold;
+}
+section .btnone:hover{
+	background-color: black;
+	color:  #FFC300;
+	font-weight: bold;
+}
+
+.changeContent::after{
+	content: " ";
+	animation: changeText 10s infinite linear;
+}
+
+@keyframes changeText{
+	0%{content: "CHina Wall";}
+	15%{content: "taj mahal";}
+	30%{content: "Petra";}
+	45%{content: "COloseum";}
+	60%{content: "macchu picchu";}
+	75%{content: "Chichen Itza";}
+	100%{content: "Chirst";}
+}
+
+
+
+
+
+/*login page*/
+
+.login-box{
+	width:250px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	
+}
+
+.login-box h1{
+	float: left;
+	font-size: 40px;
+	border-bottom: 5px solid black;
+	margin-bottom: 50px;
+	padding: 13px 0px;
+}
+
+.textbox{
+	width: 100%;
+	font-size: 20px;
+	padding: 8px;
+	margin:8px;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+}
+.textbox i{
+	float: left;
+	text-align: center;
+}
+
+ .textbox input{
+	background: none;
+	color: #FFC300;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	width: 80%;
+	float: left;
+	margin: 0 8px;
+}
+.btn{
+	width: 100%;
+	background: none;
+	font-size: 18px;
+	padding: 5px;
+	cursor: pointer;
+	margin: 12px 0;
+	border: 2px solid #FFC300;
+	color: black;
+}
+a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+/*about page styling*/
+.row{
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+
+h4{
+	color: black;
+	font-size: 50px;
+	float: left;
+	margin-left: 15px;
+}
+
+p{
+	color: white;
+	line-height: 25px;
+	font-size: 20px;
+	justify-content: left;
+	float: left;
+}
+button{
+	width: 180px;
+	color: orangered;
+	font-size: 12px;
+	background-color: black;
+	padding: 12px 0px;
+	outline: none;
+	border: none;
+	float: left;
+	margin-left: 30px;
+	border-radius: 20px;
+}
+
+.card{
+	width: 200px;
+	height: 180px;
+	display: inline-block;
+	margin: 10px 15px;
+	border-radius: 10px;
+	padding: 15px 12px;
+	cursor: pointer;
+	box-sizing: border-box;
+	background-position: center;
+	background-size: cover;
+	text-transform: uppercase;
+	font-size: 15px;
+	box-shadow: 2px 6px 8px black;
+	transition: transform 0.4s;
+
+}
+.card:hover{
+	transform: translateY(-10px);
+}
+
+.card1{
+	background-image: url(https://cdn.pixabay.com/photo/2020/01/31/21/25/brazil-4809011__340.jpg);
+}
+
+
+
+.card2{
+	background-image: url(https://cdn.pixabay.com/photo/2020/04/04/19/35/jordan-5003580__340.jpg);
+}
+
+.card3{
+	background-image: url(https://media.istockphoto.com/photos/taj-mahal-in-sunset-light-agra-india-picture-id590142600?b=1&k=6&m=590142600&s=170667a&w=0&h=f-NZ_-vZaJVGNixhgVEmxV13SjlyJQ4watu8r-Vqx24=);
+}
+.card4{
+	background-image: url(https://media.istockphoto.com/photos/colosseum-in-rome-with-morning-sun-picture-id1290101405?b=1&k=20&m=1290101405&s=170667a&w=0&h=FPmmTNGnOLsw_KvNXHdKpRdao_IHn592U7bEL-Gl69A=);
+}
+.card5{
+	background-image: url(https://media.istockphoto.com/photos/mexico-chichen-itza-yucatn-sunset-mayan-pyramid-of-kukulcan-the-picture-id942293440?b=1&k=20&m=942293440&s=170667a&w=0&h=yDqYpocgehemXzDUR4gpqhRgR93P0poOlU3YKHPh0nI=);
+}
+.card6{
+	background-image: url(https://cdn.pixabay.com/photo/2012/04/26/22/48/machu-picchu-43387__480.jpg);
+}
+.card7{
+	background-image: url(https://cdn.pixabay.com/photo/2018/09/10/22/07/great-wall-3668163__340.jpg);
+}
+
+/*registration page*/
+.register-box{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+.register-box h1{
+	float: left;
+	font-size: 50px;
+	margin: 15px 10px;
+	padding: 12px 0px;
+}
+.text1{
+    width: 110%;
+    /*float: left;*/
+	font-size: 20px;
+	padding: 8px;
+	margin:8px 10px;
+	overflow: hidden;
+}
+.text1 input{
+	background: none;
+	color: #FFC300;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	width: 80%;
+	float: left;
+	margin:  8px;
+	border-bottom: 1px solid black;
+}
+.button{
+	width: 100%;
+	background: none;
+	font-size: 18px;
+	padding: 5px;
+	cursor: pointer;
+	margin: 12px 0;
+	border: 2px solid #FFC300;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
